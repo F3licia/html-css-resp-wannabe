@@ -80,23 +80,29 @@ img {
 
 @media screen and (max-width: 420px) {
 
- *{
-   max-width: 420px;
-   margin-top: 10px;
-   margin-bottom: 10px;
-   margin-left: auto;
-   margin-right: auto;
+ *{ margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
 }
 
   .row {
+    width: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  img{
+    max-width: 100px;
+   height: auto;
+   margin: 15px;
   }
 
 
   #lezioni .row>.left,
   #lezioni .row>.right {
+    float: none;
     width: 100%;
 
   }
@@ -104,34 +110,16 @@ img {
   #why .row>.first,
   #why .row>.second,
   #why .row>.third {
+    float: none;
     margin-top: 20px;
   }
 
   #steps .row>.left,
   #steps .row>.central,
   #steps .row>.right {
-    float: left;
+    float: none;
     width: 100%;
   }
   
-  #steps .row {
-    float: left;
-    width: 100%;
-    margin-bottom: 60px;
-  }
-  
-
-  #why img{
-    max-width: 20%;
-   height: auto;
-  }
-
-  
-.row img{
-
-  margin-top: 20px;
-    width: 120px;
-    height: auto;
-       }
     
  }
